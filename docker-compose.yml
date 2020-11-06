@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  composite_template:
-    image: "composite_template:dev"
+  template:
+    image: "template"
     build:
       context: .
       dockerfile: Dockerfile

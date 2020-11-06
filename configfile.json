@@ -1,7 +1,4 @@
 {
-    "port": 3001,
-    "remoteModules": {
-        "mfe_test": "mfe_test@http://localhost:3002/remoteEntry.js"
-    },
-    "exposedModules": {}
+    "port": 0,
+    "remoteModules": {},
 }
