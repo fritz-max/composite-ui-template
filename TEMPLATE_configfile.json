@@ -2,7 +2,7 @@
     "port": {{ components.composite_ui.port }},
     "remoteModules": {
         {% for mfe in components.microfrontends.values() %}
-        "{{ mfe.name }}" : "{{mfe.name}}@{{mfe.address}}:{{mfe.port}}/remoteEntry.js"
+        "{{ mfe.name }}" : "{{mfe.name}}@{{mfe.address}}:{{mfe.port}}/remoteEntry.js"{{ ", " if not loop.last }}
         {% endfor %}
     }
 }
